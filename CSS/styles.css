@@ -1,0 +1,59 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:white;
+
+    font-family:Segoe UI, Arial, sans-serif;
+
+}
+
+.landing{
+
+    height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+img{
+
+    width:500px;
+
+    max-width:80%;
+
+}
+
+p{
+
+    margin-top:40px;
+
+    color:#555;
+
+    font-size:22px;
+
+    text-align:center;
+
+    line-height:1.6;
+
+}
+
+h3{
+
+    margin-top:30px;
+
+    color:#143B73;
+
+    font-size:30px;
+
+}
