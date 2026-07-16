@@ -1,0 +1,221 @@
+/* =========================================================
+   C6 GROUP WEBSITE — RESPONSIVE
+========================================================= */
+
+/* ---------- TABLET ---------- */
+
+@media (max-width: 980px) {
+
+    h2 {
+        font-size: 38px;
+    }
+
+    .hero-content h2 {
+        font-size: 48px;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .hero-logo {
+        order: -1;
+    }
+
+    .hero-logo img {
+        max-width: 220px;
+    }
+
+    .solution-grid,
+    .pillar-grid,
+    .advantage-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .belief-grid,
+    .challenge-grid,
+    .leadership-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .process-steps {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 40px;
+    }
+
+    .industry-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-content > :first-child {
+        grid-column: 1 / -1;
+    }
+
+    section {
+        padding: 75px 0;
+    }
+}
+
+/* ---------- MOBILE NAV ---------- */
+
+@media (max-width: 760px) {
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .main-nav ul {
+        display: none;
+    }
+
+    .main-nav.nav-open ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        border-bottom: 1px solid var(--border);
+        box-shadow: var(--shadow);
+        padding: 10px 6%;
+    }
+
+    .main-nav.nav-open a {
+        width: 100%;
+        padding: 14px 0;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .main-nav.nav-open .btn {
+        margin: 14px 0;
+    }
+
+    .site-header {
+        position: sticky;
+    }
+
+    .main-nav {
+        position: static;
+    }
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 640px) {
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 60px 0 40px;
+    }
+
+    .hero-content h2 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons .btn {
+        text-align: center;
+        width: 100%;
+    }
+
+    .page-hero h1 {
+        font-size: 32px;
+    }
+
+    section {
+        padding: 55px 0;
+    }
+
+    .solution-grid,
+    .pillar-grid,
+    .advantage-grid,
+    .values-grid,
+    .process-steps,
+    .industry-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        padding: 28px;
+    }
+
+    .leader-card {
+        padding: 28px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+
+    .brand-text p {
+        display: none;
+    }
+}
+
+/* ---------- REDUCED MOTION ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    * {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+/* ---------- FOCUS VISIBILITY ---------- */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid var(--blue);
+    outline-offset: 2px;
+}
